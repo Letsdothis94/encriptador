@@ -1,0 +1,176 @@
+body {
+    background-color: #E9ECF8;
+    /* border: 1px solid red; */
+    /* height: 100vh; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    background-image: url(./imagenes/trianglify-lowres\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header img {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+.encriptador {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 70%;
+}
+
+.encriptador textarea {
+    display: block;
+    border: none;
+    width: 82%;
+    height: 70%;
+    margin: 2% 3% 0;
+    font-size: 1.2rem;
+    background-color: #E9ECF8;
+}
+
+.encriptador textarea::placeholder {
+    color: #0A3871;
+    font-size: 2.4rem;
+    line-height: 50px;
+}
+
+.botones {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 14px;
+}
+
+.encriptador button {
+    background: #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    width: 40%;
+    color: white;
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 1rem;
+}
+
+.encriptador button:last-child {
+    background: #D8DFE8;
+    color: #0A3871;
+}
+
+#resultado {
+    position: absolute;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    height: 90%;
+    width: 25%;
+    top: 40px;
+    left: 72%;
+    padding-top: 6px;
+}
+
+#resultado img {
+    margin-top: 70%;
+    height: 30%;
+    width: 50%;
+}
+
+.primer-p {
+    font-weight: bold;
+    font-size: larger;
+}
+
+#copybtn {
+    background: #0A3871;
+    border-radius: 24px;
+    padding: 20px;
+    width: 60%;
+    color: white;
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 25px;
+    left: 20%;
+}
+
+/* responsive for tablet screen */
+@media screen and (max-width: 768px) {
+
+    .encriptador {
+        top: 15%;
+        height: 100%;
+        width: 80%;
+    }
+
+    .encriptador textarea {
+        height: 40%;
+        width: 100%;
+    }
+
+    .encriptador button {
+        padding: 14px;
+        width: 50%;
+    }
+
+    #resultado img{
+        display: none;
+    }
+
+    #resultado {
+        height: 20%;
+        width: 80%;
+        left: 10%;
+        top: 77%;
+    }
+
+    #copybtn {
+        padding: 3px;
+        width: 80%;
+        left: 10%;
+        bottom: 5px;
+    }
+}
+
+/* responsive for mobile screen */
+@media screen and (max-width: 425px) {
+
+    body {
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+    .encriptador textarea {
+        height: 30%;
+        font-size: 1rem;
+        overflow: auto;
+    }
+
+    .encriptador textarea::placeholder {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    .botones {
+        display: block;
+    }
+
+    .encriptador button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+    }
+
+    .primer-p {
+        font-size: 1.2rem;
+    }
+};

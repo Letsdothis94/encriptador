@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width" inital-scale="1.0" >
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title>Encriptador - Alura</title>
+    </head>
+    <header>
+        <img src="./imagenes/aluraLogo.png" alt="logo de Alura" />
+    </header>
+    <body>
+        <div class="centro">
+            <section class="encriptador">
+                <textarea type="text" rows="20" placeholder="Ingrese el texto aqui" id="mensaje"></textarea>
+                <div class="botones">
+                    <button id="encriptar">Encriptar</button>
+                    <button id="desencriptar">Desencriptar</button>
+                </div>
+            </section>
+            <section id="resultado">
+                <img src="./imagenes/Muñeco.png" alt="Ninho usando una lupa" />
+                <p class="primer-p">Ningun mensaje fue encontrado</p>
+                <p id="change-me">Ingresa el texto que desees encriptar o desencriptar</p>
+            </section>
+        </div>
+    </body>
+    <script src="./index.js"></script>
+</html>
