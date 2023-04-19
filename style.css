@@ -34,6 +34,7 @@ header img {
     margin: 2% 3% 0;
     font-size: 1.2rem;
     background-color: #E9ECF8;
+    overflow: scroll;
 }
 
 .encriptador textarea::placeholder {
@@ -73,11 +74,12 @@ header img {
     border-radius: 32px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
     text-align: center;
-    height: 90%;
+    height: 86%;
     width: 25%;
     top: 40px;
     left: 72%;
     padding-top: 6px;
+    overflow: auto;
 }
 
 #resultado img {
@@ -107,6 +109,13 @@ header img {
 
 /* responsive for tablet screen */
 @media screen and (max-width: 768px) {
+
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+    }
 
     .encriptador {
         top: 15%;
@@ -149,6 +158,8 @@ header img {
     body {
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
     }
 
     .encriptador textarea {
