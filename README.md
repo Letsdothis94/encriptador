@@ -9,7 +9,7 @@
 #### Encripta/Desencripta & Copia texto
 <img src="/imagenes/encriptadorReadme.png" />
 
-### Responsivo a Mobil
+### Responsivo a Movil
 <img src="/imagenes/encriptadorMobile.png" />
 
 #### Live Site
